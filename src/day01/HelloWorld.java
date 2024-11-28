@@ -15,8 +15,10 @@ public class HelloWorld {
             sd,
             sd2
         }
-        System.out.println(task.你好);
+        System.out.println(task.你好 + "\n" + task.w);
         HelloWorld s = new HelloWorld();
         System.out.println(s.str2);
+        Thread thread = new Thread();
+        thread.start();
     }
 }
