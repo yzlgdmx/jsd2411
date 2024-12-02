@@ -1,6 +1,6 @@
 package HomeWork;
 
-public class day02 {
+public class Day02 {
     public static void main(String[] args) {
 
         //region 1. 变量的练习：

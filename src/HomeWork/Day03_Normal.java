@@ -1,9 +1,8 @@
 package HomeWork;
 import MyTool.SelfTool;
 import java.text.MessageFormat;
-import java.util.ArrayList;
 
-public class day03_normal {
+public class Day03_Normal {
     public static void main(String[] args) {
 //        Test1();
 //        Test2();

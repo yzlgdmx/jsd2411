@@ -1,10 +1,9 @@
 package HomeWork;
 
 import java.text.MessageFormat;
-import java.time.YearMonth;
 import java.util.Scanner;
 
-public class day03_Extensions {
+public class Day03_Extensions {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

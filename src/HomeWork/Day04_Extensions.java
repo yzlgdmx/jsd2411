@@ -1,7 +1,5 @@
 package HomeWork;
 
-import day03.IfElseDemo;
-
 public class Day04_Extensions {
     public static void main(String[] args) {
         //输出1900到2023年之间所有的闰年
@@ -19,7 +17,7 @@ public class Day04_Extensions {
     public static void LeapYear(int minYear, int maxYear) {
         int nextLine = 0;
         for (int i = minYear; i <= maxYear; i++) {
-            if (day03_Extensions.Test2(i)) {
+            if (Day03_Extensions.Test2(i)) {
                 System.out.print(i + "\t");
                 nextLine += 1;
                 if (nextLine == 10) {
