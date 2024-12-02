@@ -1,6 +1,7 @@
 package HomeWork;
-
+import MyTool.SelfTool;
 import java.text.MessageFormat;
+import java.util.ArrayList;
 
 public class day03_normal {
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class day03_normal {
 //        Test6();
 //        Test7(600, 99);
 //        Test8(400, 999);
+        SelfTool.MultiplicationTable();
     }
 
     /**
@@ -162,4 +164,6 @@ public class day03_normal {
         if (score <= 100 && score >= 0) System.out.println("合法成绩");
         else System.out.println("不合法成绩");
     }
+
+
 }
