@@ -7,6 +7,9 @@ import javax.tools.JavaFileManager;
 import javax.tools.JavaFileObject;
 import java.text.MessageFormat;
 import java.util.*;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class SelfTool {
 
@@ -109,5 +112,17 @@ public class SelfTool {
         return min + (max - min) * random.nextDouble();
     }
 
+    /**
+     * 延迟执行一个方法
+     *
+     * @float 延迟时间
+     * @Runnable 执行方法
+     */
+    public void DelayFunction(float delayTime, Runnable function) {
+        ScheduledExecutorService executor = Executors.newScheduledThreadPool(3);
 
+        executor.schedule(function, (long) (delayTime * 1000), TimeUnit.MILLISECONDS);
+
+        executor.shutdown();
+    }
 }

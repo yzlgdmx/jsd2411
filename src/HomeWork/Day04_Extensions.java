@@ -4,7 +4,7 @@ public class Day04_Extensions {
     public static void main(String[] args) {
         //输出1900到2023年之间所有的闰年
         LeapYear(1900, 2023);
-        SumOfEvenNum();
+        SumOfEvenNum(1000);
         //求8的阶乘，并输出
         System.out.println(FactorialOfNum(8));
         //打印10行星星
@@ -31,9 +31,9 @@ public class Day04_Extensions {
     /**
      * 2. 利用for循环计算：求数字1到100之内，所有偶数的和，并输出
      */
-    public static void SumOfEvenNum() {
+    public static void SumOfEvenNum(int length) {
         int tmp = 0;
-        for (int i = 2; i <= 100; i += 2) {
+        for (int i = 2; i <= length; i += 2) {
             tmp += i;
         }
         System.out.println(tmp);
