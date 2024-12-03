@@ -18,14 +18,14 @@ public class SelfTool {
     }
 
     public static void main(String[] args) {
-        MultiplicationTable();
+        //MultiplicationTable();
 
-        outer:
+       /* outer:
         for (int i = 1; i < 10; i++) {
             for (int j = 1; j <= i; j++) {
                 break outer;
             }
-        }
+        }*/
         /*     ArrayList<Object> obj = new ArrayList<>();
         obj.add(1);
         obj.add("1");
@@ -36,7 +36,8 @@ public class SelfTool {
         obj.add(selfTool);
 */
 
-
+        for (int i = 0; i < 101; i++)
+            System.out.println(getRandomInt(-100, 100));
     }
 
     /**

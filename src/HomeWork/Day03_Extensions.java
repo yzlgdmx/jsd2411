@@ -44,7 +44,7 @@ public class Day03_Extensions {
      * 或者
      * 2)400年再闰，就是：能被400整除
      */
-    public static boolean Test2(int year) {
+    public static boolean JudgeLeapYear(int year) {
         //if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) /*System.out.println("是闰年")*/ return true;
         if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) /*System.out.println("是闰年")*/ return true;
         else /*System.out.println("不是闰年")*/return false;
@@ -106,7 +106,7 @@ public class Day03_Extensions {
                 break;
             case 2:
                 //判断平闰年 闰年29  平年28
-                if (Test2(year)) System.out.println(MessageFormat.format("{0}年的第{1}个月有{2}天", year, month, 29));
+                if (JudgeLeapYear(year)) System.out.println(MessageFormat.format("{0}年的第{1}个月有{2}天", year, month, 29));
                 else System.out.println(MessageFormat.format("{0}年的第{1}个月有{2}天", year, month, 28));
                 break;
         }

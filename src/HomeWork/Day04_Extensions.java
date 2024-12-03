@@ -5,6 +5,7 @@ public class Day04_Extensions {
         //输出1900到2023年之间所有的闰年
         LeapYear(1900, 2023);
         SumOfEvenNum(1000);
+        System.out.println(SumOfEvenNum2(1000));
         //求8的阶乘，并输出
         System.out.println(FactorialOfNum(8));
         //打印10行星星
@@ -17,7 +18,7 @@ public class Day04_Extensions {
     public static void LeapYear(int minYear, int maxYear) {
         int nextLine = 0;
         for (int i = minYear; i <= maxYear; i++) {
-            if (Day03_Extensions.Test2(i)) {
+            if (Day03_Extensions.JudgeLeapYear(i)) {
                 System.out.print(i + "\t");
                 nextLine += 1;
                 if (nextLine == 10) {
@@ -37,6 +38,15 @@ public class Day04_Extensions {
             tmp += i;
         }
         System.out.println(tmp);
+    }
+
+    /**
+     * 2. 利用for循环计算：求数字1到100之内，所有偶数的和，并输出
+     * 递归写法
+     */
+    public static int SumOfEvenNum2(int length) {
+        if (length == 2) return length;
+        else return length + SumOfEvenNum2(length - 2);
     }
 
 
