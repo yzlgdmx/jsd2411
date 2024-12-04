@@ -32,14 +32,20 @@ class Player {
 
 }
 
-class User1 extends Player implements Weapon, Equip {
-
+abstract class User1 extends Player implements Weapon, Equip {
+    public int HP;
+    public int Attack;
+    public int Defence;
 }
 
 interface Weapon {
-    public static void mythod1() {
-    }
+    public void Attack(int attack);
 }
 
 interface Equip {
+    public void Defence(int defence);
+}
+
+interface Health {
+    public void TakeDamage(int Damage);
 }
